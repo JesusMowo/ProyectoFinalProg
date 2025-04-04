@@ -16,4 +16,5 @@ C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.pdb
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.genruntimeconfig.cache
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ref\ProyectoFinal.dll
-C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Debug\net8.0-windows\Csv\Users.csv
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.FormRegisterPt.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Debug\net8.0-windows\Resources\Txt\Users.txt

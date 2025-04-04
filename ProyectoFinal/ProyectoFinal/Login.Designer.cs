@@ -68,6 +68,7 @@
             NewAccBtn.TabIndex = 3;
             NewAccBtn.Text = "Crear Cuenta";
             NewAccBtn.UseVisualStyleBackColor = true;
+            NewAccBtn.Click += NewAccBtn_Click;
             // 
             // Userlabel
             // 
