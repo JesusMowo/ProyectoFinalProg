@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal
 {
-    partial class FormRegisterPt
+    partial class FormRegisterUser
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +35,7 @@
             label2 = new Label();
             label3 = new Label();
             ContinuarRegistro = new Button();
+            BackBtn = new Button();
             SuspendLayout();
             // 
             // UserTxtBox
@@ -95,11 +96,22 @@
             ContinuarRegistro.UseVisualStyleBackColor = true;
             ContinuarRegistro.Click += ContinuarRegistro_Click;
             // 
-            // FormRegisterPt
+            // BackBtn
+            // 
+            BackBtn.Location = new Point(70, 377);
+            BackBtn.Name = "BackBtn";
+            BackBtn.Size = new Size(75, 23);
+            BackBtn.TabIndex = 7;
+            BackBtn.Text = "Volver";
+            BackBtn.UseVisualStyleBackColor = true;
+            BackBtn.Click += BackBtn_Click;
+            // 
+            // FormRegisterUser
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(380, 450);
+            Controls.Add(BackBtn);
             Controls.Add(ContinuarRegistro);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -107,7 +119,7 @@
             Controls.Add(Password2TxtBox);
             Controls.Add(Password1TxtBox);
             Controls.Add(UserTxtBox);
-            Name = "FormRegisterPt";
+            Name = "FormRegisterUser";
             Text = "RegisterPtForm";
             ResumeLayout(false);
             PerformLayout();
@@ -122,5 +134,6 @@
         private Label label2;
         private Label label3;
         private Button ContinuarRegistro;
+        private Button BackBtn;
     }
 }

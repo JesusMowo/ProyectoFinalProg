@@ -4,9 +4,9 @@ using ProyectoFinal.Utils;
 
 namespace ProyectoFinal
 {
-    public partial class Login : Form
+    public partial class FormLogin : Form
     {
-        public Login()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -15,26 +15,21 @@ namespace ProyectoFinal
         {
             string user = UserTxtBox.Text;
             string password = PasswordTxtBox.Text;
-            //string ruta = Path.Combine(
-            //    AppDomain.CurrentDomain.BaseDirectory,
-            //    "Txt",
-            //    "Users.txt"
-            //);
-            string ruta = Rutas.ObtenerRuta();
+            string ruta = Rutas.ObtenerRutaUsers();
             var users = CRUD.LeerTxt(ruta, Users.ParseFromTxt);
             bool loginSuccessful = false;
 
             foreach (var u in users)
             {
-                if (u.Username == user && u.Password == password)
+                if (u.username == user && u.password == password)
                 {
-                    MessageBox.Show("Bienvenido " + u.Username);
+                    MessageBox.Show("Bienvenido " + u.username);
                     loginSuccessful = true;
                     MessageBox.Show("Rol" + u.rol);
                     switch (u.rol)
                     {
                         case "Admin":
-                            MessageBox.Show("Bienvenido Administrador " + u.Username);
+                            MessageBox.Show("Bienvenido Administrador " + u.username);
                             new FormAdmin(u).Show();
                             this.Hide();
                             break;
@@ -58,7 +53,7 @@ namespace ProyectoFinal
 
         private void NewAccBtn_Click(object sender, EventArgs e)
         {
-            new FormRegisterPt().Show();
+            new FormRegisterUser(true).Show();
             this.Hide();
         }
     }

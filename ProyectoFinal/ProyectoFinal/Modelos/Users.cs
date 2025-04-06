@@ -11,8 +11,8 @@ namespace ProyectoFinal.Modelos
     public class Users : ITxtParsable<Users>
     {
         public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
         public string rol { get; set; }
 
         public static Users ParseFromTxt(string linea)
@@ -21,15 +21,15 @@ namespace ProyectoFinal.Modelos
             return new Users
             {
                 Id = int.Parse(campos[0]),
-                Username = campos[1],
-                Password = campos[2],
+                username = campos[1],
+                password = campos[2],
                 rol = campos[3]
             };
         }
 
         public string ToTxt()
         {
-            return $"{Id},{Username},{Password},{rol}";
+            return $"{Id},{username},{password},{rol}";
         }
 
         static Users ITxtParsable<Users>.ParseFromTxt(string linea)

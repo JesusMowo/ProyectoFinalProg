@@ -16,13 +16,18 @@ namespace ProyectoFinal
 {
     public partial class FormAdmin : Form
     {
-        private Users _user;
+        public Users user;
 
         public FormAdmin(Users user)
         {
             InitializeComponent();
-            _user = user;
-            UsernameLabel.Text = "Bienvenido " + _user.Username;
+            this.user = user;
+            UsernameLabel.Text = $"Bienvenido {this.user.username}";
+        }
+
+        private void NewDocBtn_Click(object sender, EventArgs e)
+        {
+            new FormRegisterUser(false).Show();
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             UsernameLabel = new Label();
+            NewDocBtn = new Button();
             SuspendLayout();
             // 
             // UsernameLabel
@@ -39,11 +40,22 @@
             UsernameLabel.Size = new Size(0, 15);
             UsernameLabel.TabIndex = 0;
             // 
+            // NewDocBtn
+            // 
+            NewDocBtn.Location = new Point(629, 362);
+            NewDocBtn.Name = "NewDocBtn";
+            NewDocBtn.Size = new Size(96, 23);
+            NewDocBtn.TabIndex = 1;
+            NewDocBtn.Text = "Crear Doctor";
+            NewDocBtn.UseVisualStyleBackColor = true;
+            NewDocBtn.Click += NewDocBtn_Click;
+            // 
             // FormAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(NewDocBtn);
             Controls.Add(UsernameLabel);
             Name = "FormAdmin";
             Text = "AdminForm";
@@ -54,5 +66,6 @@
         #endregion
 
         private Label UsernameLabel;
+        private Button NewDocBtn;
     }
 }
