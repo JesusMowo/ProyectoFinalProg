@@ -28,3 +28,6 @@ C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Interfaces.FormDoctores.resources
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Registro.FormRegistroCita.resources
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Interfaces.FormVerCitas.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Registro.FormRegistroPacienteAtendido.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Interfaces.FormHistorialMedico.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Interfaces.FormHistorialPaciente.resources

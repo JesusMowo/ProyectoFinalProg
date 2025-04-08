@@ -19,6 +19,12 @@
     <Compile Update="Forms\Interfaces\FormHistorialAuditoria.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Interfaces\FormHistorialMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Interfaces\FormHistorialPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Interfaces\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -38,6 +44,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Registro\FormRegistroDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Registro\FormRegistroPacienteAtendido.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Registro\FormRegistroProducto.cs">

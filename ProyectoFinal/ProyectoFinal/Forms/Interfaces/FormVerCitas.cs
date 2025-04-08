@@ -57,5 +57,9 @@ namespace ProyectoFinal.Forms.Interfaces
             CitasDGV.DataSource = citasDelPaciente;
         }
 
+        private void VolverBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

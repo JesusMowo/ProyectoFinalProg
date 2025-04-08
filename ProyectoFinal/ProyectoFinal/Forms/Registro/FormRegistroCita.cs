@@ -173,7 +173,7 @@ namespace ProyectoFinal.Forms.Registro
 
             var citas = CRUD.LeerTxt(rutaCitas, Citas.ParseFromTxt);
             citas.Add(nuevaCita);
-            CRUD.EscribirCsv(rutaCitas, citas);
+            CRUD.EscribirTxt(rutaCitas, citas);
 
             MessageBox.Show("Cita guardada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();

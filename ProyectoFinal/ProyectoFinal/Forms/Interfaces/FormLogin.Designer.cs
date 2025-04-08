@@ -88,7 +88,7 @@
             PasswordLabel.TabIndex = 5;
             PasswordLabel.Text = "Contraseña";
             // 
-            // Login
+            // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -99,7 +99,7 @@
             Controls.Add(LoginBtn);
             Controls.Add(PasswordTxtBox);
             Controls.Add(UserTxtBox);
-            Name = "Login";
+            Name = "FormLogin";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();

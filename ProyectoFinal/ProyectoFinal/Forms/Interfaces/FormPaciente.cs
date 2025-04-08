@@ -32,5 +32,10 @@ namespace ProyectoFinal.Forms.Interfaces
         {
             new FormVerCitas(UserId).Show();
         }
+
+        private void HistorialClinicoBtn_Click(object sender, EventArgs e)
+        {
+            new FormHistorialPaciente(UserId).Show();
+        }
     }
 }

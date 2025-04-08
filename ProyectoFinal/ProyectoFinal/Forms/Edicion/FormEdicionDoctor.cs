@@ -73,7 +73,7 @@ namespace ProyectoFinal.Forms.Edicion
                 doctor.telefono = TelefonoTxt.Text;
 
                 // Reescribir el archivo con los datos actualizados
-                CRUD.EscribirCsv(rutaDoctores, doctores);
+                CRUD.EscribirTxt(rutaDoctores, doctores);
 
                 MessageBox.Show("Doctor actualizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 CargarDatos(); // Recargar los datos en el DataGridView
@@ -163,7 +163,7 @@ namespace ProyectoFinal.Forms.Edicion
                 doctor.telefono = TelefonoTxt.Text;
 
                 // Reescribir el archivo con los datos actualizados
-                CRUD.EscribirCsv(rutaDoctores, doctores);
+                CRUD.EscribirTxt(rutaDoctores, doctores);
 
                 MessageBox.Show("Doctor actualizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 CargarDatos(); // Recargar los datos en el DataGridView

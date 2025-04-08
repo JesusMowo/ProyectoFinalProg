@@ -52,6 +52,7 @@
             VolverBtn.TabIndex = 1;
             VolverBtn.Text = "Volver";
             VolverBtn.UseVisualStyleBackColor = true;
+            VolverBtn.Click += VolverBtn_Click;
             // 
             // FormVerCitas
             // 

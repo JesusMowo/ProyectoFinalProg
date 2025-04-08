@@ -74,7 +74,7 @@ namespace ProyectoFinal.Forms.Interfaces
                 // Actualizar el producto
                 producto.nombre = NombreTxt.Text;
                 producto.cantidad = nuevaCantidad;
-                CRUD.EscribirCsv(rutaProductos, productos);
+                CRUD.EscribirTxt(rutaProductos, productos);
 
                 // Registrar la auditoría
                 var rutaAuditoria = Rutas.ObtenerRutaAuditoria(); 
@@ -90,7 +90,7 @@ namespace ProyectoFinal.Forms.Interfaces
                 };
 
                 auditorias.Add(nuevaAuditoria);
-                CRUD.EscribirCsv(rutaAuditoria, auditorias);
+                CRUD.EscribirTxt(rutaAuditoria, auditorias);
 
                 MessageBox.Show("Producto actualizado y auditoría registrada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 CargarDatos();

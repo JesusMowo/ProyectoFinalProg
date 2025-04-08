@@ -76,7 +76,7 @@ namespace ProyectoFinal.Utils
         }
 
         // UPDATE o DELETE (reescribe todo el archivo)
-        public static void EscribirCsv<T>(string ruta, List<T> elementos) where T : ITxtParsable<T>
+        public static void EscribirTxt<T>(string ruta, List<T> elementos) where T : ITxtParsable<T>
         {
             AsegurarArchivoExiste(ruta);
 

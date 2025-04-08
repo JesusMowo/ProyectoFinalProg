@@ -61,6 +61,7 @@
             HistorialClinicoBtn.TabIndex = 2;
             HistorialClinicoBtn.Text = "Historial Clinico";
             HistorialClinicoBtn.UseVisualStyleBackColor = true;
+            HistorialClinicoBtn.Click += HistorialClinicoBtn_Click;
             // 
             // FormPaciente
             // 

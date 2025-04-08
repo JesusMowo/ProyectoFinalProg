@@ -25,7 +25,6 @@ namespace ProyectoFinal
             {
                 if (u.username == user && u.password == password)
                 {
-                    MessageBox.Show("Bienvenido " + u.username);
                     loginSuccessful = true;
                     switch (u.rol)
                     {
@@ -36,6 +35,8 @@ namespace ProyectoFinal
                             break;
                         case "Doctor":
                             MessageBox.Show("Bienvenido Doctor " + u.username);
+                            new FormDoctores(u.Id).Show();
+                            this.Hide();
                             break;
                         case "Paciente":
                             new FormPaciente(u).Show();
@@ -72,5 +73,6 @@ namespace ProyectoFinal
             new FormRegisterUser(true).Show();
             this.Hide();
         }
+
     }
 }

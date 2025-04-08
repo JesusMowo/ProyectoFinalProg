@@ -46,6 +46,12 @@ namespace ProyectoFinal.Utils
             string ruta = Path.Combine(rutaDocumentos, "borrar", "Auditoria.txt");
             return ruta;
         }
+        public static string ObtenerRutaHistorialClinico()
+        {
+            string rutaDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string ruta = Path.Combine(rutaDocumentos, "borrar", "HistorialClinico.txt");
+            return ruta;
+        }
     }
 }
 

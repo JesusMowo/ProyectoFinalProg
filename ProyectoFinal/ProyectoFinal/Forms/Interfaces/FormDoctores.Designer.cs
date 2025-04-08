@@ -53,6 +53,7 @@
             AtenderCitaBtn.TabIndex = 1;
             AtenderCitaBtn.Text = "Atender Cita";
             AtenderCitaBtn.UseVisualStyleBackColor = true;
+            AtenderCitaBtn.Click += AtenderCitaBtn_Click;
             // 
             // HistorialMedicoBtn
             // 
@@ -62,6 +63,7 @@
             HistorialMedicoBtn.TabIndex = 2;
             HistorialMedicoBtn.Text = "Historial Medico";
             HistorialMedicoBtn.UseVisualStyleBackColor = true;
+            HistorialMedicoBtn.Click += HistorialMedicoBtn_Click;
             // 
             // FormDoctores
             // 
