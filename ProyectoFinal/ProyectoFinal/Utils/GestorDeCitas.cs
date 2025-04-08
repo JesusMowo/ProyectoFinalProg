@@ -24,14 +24,14 @@ namespace ProyectoFinal.Utils
 
         public static bool TieneCitaEnHora(string rutaCitas, int idDoctor, string horaInicio)
         {
-            var citas = LeerCitasDesdeTxt(rutaCitas);
+            var citas = CRUD.LeerTxt(rutaCitas, Citas.ParseFromTxt);
             var hora = TimeSpan.Parse(horaInicio);
             return citas.Any(c => c.IdDoctor == idDoctor && TimeSpan.Parse(c.horario.Split('-')[0]) == hora);
         }
 
         public static bool PuedeAgendarCita(Doctores doctor, string rutaCitas, string horaInicio)
         {
-            if (!EsHorarioValido(doctor.horarios, horaInicio))
+            if (!EsHorarioValido(doctor.horarioSemanal, horaInicio))
             {
                 return false;
             }
@@ -42,20 +42,6 @@ namespace ProyectoFinal.Utils
             }
 
             return true;
-        }
-
-        private static List<Citas> LeerCitasDesdeTxt(string ruta)
-        {
-            var citas = new List<Citas>();
-            using (var sr = new StreamReader(ruta))
-            {
-                string linea;
-                while ((linea = sr.ReadLine()) != null)
-                {
-                    citas.Add(Citas.ParseFromTxt(linea));
-                }
-            }
-            return citas;
         }
     }
 }

@@ -13,26 +13,39 @@ namespace ProyectoFinal.Utils
         public static string ObtenerRutaUsers()
         {
             string rutaDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string ruta = Path.Combine(rutaDocumentos, "Users.txt");
+            string ruta = Path.Combine(rutaDocumentos, "borrar", "Users.txt");
             return ruta;
         }
         public static string ObtenerRutaPacientes()
         {
             string rutaDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string ruta = Path.Combine(rutaDocumentos, "Pacientes.txt");
+            string ruta = Path.Combine(rutaDocumentos, "borrar", "Pacientes.txt");
             return ruta;
         }
         public static string ObtenerRutaDoctores()
         {
             string rutaDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string ruta = Path.Combine(rutaDocumentos, "Doctores.txt");
+            string ruta = Path.Combine(rutaDocumentos, "borrar", "Doctores.txt");
             return ruta;
         }
         public static string ObtenerRutaCitas()
         {
             string rutaDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string ruta = Path.Combine(rutaDocumentos, "Citas.txt");
+            string ruta = Path.Combine(rutaDocumentos, "borrar", "Citas.txt");
+            return ruta;
+        }
+        public static string ObtenerRutaProductos()
+        {
+            string rutaDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string ruta = Path.Combine(rutaDocumentos, "borrar", "Productos.txt");
+            return ruta;
+        }
+        public static string ObtenerRutaAuditoria()
+        {
+            string rutaDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string ruta = Path.Combine(rutaDocumentos, "borrar", "Auditoria.txt");
             return ruta;
         }
     }
 }
+

@@ -1,0 +1,86 @@
+﻿using ProyectoFinal.Modelos;
+using ProyectoFinal.Utils;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ProyectoFinal.Forms.Interfaces
+{
+    public partial class FormEdicionDeAlmacen : Form
+    {
+        private string rutaProductos = Rutas.ObtenerRutaProductos();
+        private int productoSeleccionadoId;
+
+        public FormEdicionDeAlmacen()
+        {
+            InitializeComponent();
+            CargarDatos();
+        }
+
+        private void CargarDatos()
+        {
+            var productos = CRUD.LeerTxt(rutaProductos, Producto.ParseFromTxt);
+
+            var datosProductos = productos.Select(p => new
+            {
+                Id = p.Id,
+                Producto = p.nombre,
+                Cantidad = p.cantidad
+            }).ToList();
+
+            EdicionDGV.DataSource = datosProductos;
+        }
+
+        private void EdicionDGV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) 
+            {
+                var filaSeleccionada = EdicionDGV.Rows[e.RowIndex];
+                productoSeleccionadoId = (int)filaSeleccionada.Cells["Id"].Value;
+                NombreLabel.Text = filaSeleccionada.Cells["Producto"].Value.ToString();
+                CantidadLabel.Text = filaSeleccionada.Cells["Cantidad"].Value.ToString();
+            }
+        }
+
+        private void GuardarBtn_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(NombreLabel.Text) || string.IsNullOrWhiteSpace(CantidadLabel.Text))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!int.TryParse(CantidadLabel.Text, out int nuevaCantidad) || nuevaCantidad < 0)
+            {
+                MessageBox.Show("La cantidad debe ser un número no negativo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var productos = CRUD.LeerTxt(rutaProductos, Producto.ParseFromTxt);
+
+            // Actualizar el producto seleccionado
+            var producto = productos.FirstOrDefault(p => p.Id == productoSeleccionadoId);
+            if (producto != null)
+            {
+                producto.nombre = NombreLabel.Text;
+                producto.cantidad = nuevaCantidad;
+
+                // Reescribir el archivo con los datos actualizados
+                CRUD.EscribirCsv(rutaProductos, productos);
+
+                MessageBox.Show("Producto actualizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarDatos(); // Recargar los datos en el DataGridView
+            }
+            else
+            {
+                MessageBox.Show("No se encontró el producto seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
+}

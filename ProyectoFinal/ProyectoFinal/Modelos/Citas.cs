@@ -13,6 +13,9 @@ namespace ProyectoFinal.Modelos
         public int IdPaciente { get; set; }
         public int IdDoctor { get; set; }
         public string horario { get; set; }
+        public string estado { get; set; } = "Pendiente"; // Estado por defecto
+        public DateTime Dias { get; set; } 
+
         public static Citas ParseFromTxt(string lineaCsv)
         {
             var campos = lineaCsv.Split(',');
@@ -21,13 +24,16 @@ namespace ProyectoFinal.Modelos
                 Id = int.Parse(campos[0]),
                 IdPaciente = int.Parse(campos[1]),
                 IdDoctor = int.Parse(campos[2]),
-                horario = campos[3]
+                horario = campos[3],
+                estado = campos[4], 
+                Dias = DateTime.Parse(campos[5]) 
+
             };
         }
 
         public string ToTxt()
         {
-            return $"{Id},{IdPaciente},{IdDoctor},{horario}";
+            return $"{Id},{IdPaciente},{IdDoctor},{horario},{estado},{Dias:yyyy-MM-dd}";
         }
     }
 }

@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\forms\\interfaces\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\forms\\interfaces\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\forms\\interfaces\\formpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\forms\\interfaces\\formpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\forms\\registro\\formpacienteregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\forms\\registro\\formpacienteregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\forms\\interfaces\\formvercitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\forms\\interfaces\\formvercitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\forms\\interfaces\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\forms\\interfaces\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\forms\\registro\\formregisteruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\forms\\registro\\formregisteruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\forms\\registro\\formregisteruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\forms\\registro\\formregisteruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\forms\\registro\\formregistrodoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\forms\\registro\\formregistrodoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\modelos\\doctores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\modelos\\doctores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\utils\\gestordecitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\utils\\gestordecitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\modelos\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\modelos\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\aleja\\desktop\\proyectofinal\\proyectofinal\\proyectofinal\\forms\\interfaces\\formvercitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C290DA66-0F82-4AA5-9703-69FDD67A7008}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\forms\\interfaces\\formvercitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,116 +26,40 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormRegisterUser.cs",
-              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Registro\\FormRegisterUser.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Forms\\Registro\\FormRegisterUser.cs",
-              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Registro\\FormRegisterUser.cs*",
-              "RelativeToolTip": "ProyectoFinal\\Forms\\Registro\\FormRegisterUser.cs*",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAABYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T01:46:40.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormRegisterUser.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Registro\\FormRegisterUser.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Forms\\Registro\\FormRegisterUser.cs",
-              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Registro\\FormRegisterUser.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "ProyectoFinal\\Forms\\Registro\\FormRegisterUser.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T01:46:15.867Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Interfaces\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Forms\\Interfaces\\FormAdmin.cs",
-              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Interfaces\\FormAdmin.cs*",
-              "RelativeToolTip": "ProyectoFinal\\Forms\\Interfaces\\FormAdmin.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAkwB4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T01:40:27.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormAdmin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Interfaces\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Forms\\Interfaces\\FormAdmin.cs",
-              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Interfaces\\FormAdmin.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "ProyectoFinal\\Forms\\Interfaces\\FormAdmin.cs [Dise\u00F1o]*",
+              "Title": "FormVerCitas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Interfaces\\FormVerCitas.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Forms\\Interfaces\\FormVerCitas.cs",
+              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Interfaces\\FormVerCitas.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "ProyectoFinal\\Forms\\Interfaces\\FormVerCitas.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T01:40:26.732Z",
+              "WhenOpened": "2025-04-08T20:15:37.004Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormPacienteRegistro.cs",
-              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Registro\\FormPacienteRegistro.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Forms\\Registro\\FormPacienteRegistro.cs",
-              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Registro\\FormPacienteRegistro.cs",
-              "RelativeToolTip": "ProyectoFinal\\Forms\\Registro\\FormPacienteRegistro.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAkwEAAAAAYAAAAAAAAAA==",
+              "Title": "FormVerCitas.cs",
+              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Interfaces\\FormVerCitas.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Forms\\Interfaces\\FormVerCitas.cs",
+              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Interfaces\\FormVerCitas.cs*",
+              "RelativeToolTip": "ProyectoFinal\\Forms\\Interfaces\\FormVerCitas.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwDwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T01:29:08.527Z",
+              "WhenOpened": "2025-04-08T20:08:20.406Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormRegistroDoc.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Registro\\FormRegistroDoc.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Forms\\Registro\\FormRegistroDoc.cs",
-              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Registro\\FormRegistroDoc.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoFinal\\Forms\\Registro\\FormRegistroDoc.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "FormPaciente.cs",
+              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Interfaces\\FormPaciente.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Forms\\Interfaces\\FormPaciente.cs",
+              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Forms\\Interfaces\\FormPaciente.cs*",
+              "RelativeToolTip": "ProyectoFinal\\Forms\\Interfaces\\FormPaciente.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T01:26:20.419Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Citas.cs",
-              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Modelos\\Citas.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Modelos\\Citas.cs",
-              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Modelos\\Citas.cs",
-              "RelativeToolTip": "ProyectoFinal\\Modelos\\Citas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T01:08:41.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GestorDeCitas.cs",
-              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Utils\\GestorDeCitas.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Utils\\GestorDeCitas.cs",
-              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Utils\\GestorDeCitas.cs",
-              "RelativeToolTip": "ProyectoFinal\\Utils\\GestorDeCitas.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T01:03:11.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Doctores.cs",
-              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Modelos\\Doctores.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Modelos\\Doctores.cs",
-              "ToolTip": "C:\\Users\\aleja\\Desktop\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\Modelos\\Doctores.cs",
-              "RelativeToolTip": "ProyectoFinal\\Modelos\\Doctores.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T00:42:12.331Z",
+              "WhenOpened": "2025-04-08T19:20:44.186Z",
               "EditorCaption": ""
             }
           ]

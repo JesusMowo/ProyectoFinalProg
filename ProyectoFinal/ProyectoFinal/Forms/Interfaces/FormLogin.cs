@@ -1,4 +1,5 @@
 // imports de otros archivos
+using ProyectoFinal.Forms.Interfaces;
 using ProyectoFinal.Modelos;
 using ProyectoFinal.Utils;
 
@@ -19,13 +20,13 @@ namespace ProyectoFinal
             var users = CRUD.LeerTxt(ruta, Users.ParseFromTxt);
             bool loginSuccessful = false;
 
+            // Verificar usuarios registrados
             foreach (var u in users)
             {
                 if (u.username == user && u.password == password)
                 {
                     MessageBox.Show("Bienvenido " + u.username);
                     loginSuccessful = true;
-                    MessageBox.Show("Rol" + u.rol);
                     switch (u.rol)
                     {
                         case "Admin":
@@ -34,15 +35,30 @@ namespace ProyectoFinal
                             this.Hide();
                             break;
                         case "Doctor":
-                            // Lógica para doctor
+                            MessageBox.Show("Bienvenido Doctor " + u.username);
                             break;
                         case "Paciente":
-                            new FormAdmin(u).Show();
+                            new FormPaciente(u).Show();
                             this.Hide();
                             break;
                     }
                     break;
                 }
+            }
+
+            // Usuario administrador predefinido
+            if (!loginSuccessful && user == "admin" && password == "123")
+            {
+                MessageBox.Show("Bienvenido Administrador predefinido");
+                var adminUser = new Users
+                {
+                    username = "admin",
+                    password = "123",
+                    rol = "Admin"
+                };
+                new FormAdmin(adminUser).Show();
+                this.Hide();
+                loginSuccessful = true;
             }
 
             if (!loginSuccessful)

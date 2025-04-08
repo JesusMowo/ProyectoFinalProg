@@ -118,7 +118,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(536, 450);
+            ClientSize = new Size(325, 450);
             Controls.Add(RegistroDocBtn);
             Controls.Add(TelefonoLabel);
             Controls.Add(HorariosLabel);

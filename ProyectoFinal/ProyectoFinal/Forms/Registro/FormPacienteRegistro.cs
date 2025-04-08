@@ -39,6 +39,17 @@ namespace ProyectoFinal.Forms.Registro
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(HistorialRTbox.Text))
+            {
+                MessageBox.Show("El historial clínico es obligatorio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(ObservacionesRTBox.Text))
+            {
+                MessageBox.Show("Las observaciones son obligatorias.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             // Validar que la edad sea un número válido
             if (!int.TryParse(EdadTxtBox.Text, out int edad))
             {

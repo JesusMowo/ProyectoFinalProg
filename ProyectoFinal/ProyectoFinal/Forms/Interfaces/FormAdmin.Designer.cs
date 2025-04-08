@@ -30,6 +30,8 @@
         {
             UsernameLabel = new Label();
             NewDocBtn = new Button();
+            AlmacenBtn = new Button();
+            HorariosBtn = new Button();
             SuspendLayout();
             // 
             // UsernameLabel
@@ -42,7 +44,7 @@
             // 
             // NewDocBtn
             // 
-            NewDocBtn.Location = new Point(629, 362);
+            NewDocBtn.Location = new Point(83, 322);
             NewDocBtn.Name = "NewDocBtn";
             NewDocBtn.Size = new Size(96, 23);
             NewDocBtn.TabIndex = 1;
@@ -50,11 +52,33 @@
             NewDocBtn.UseVisualStyleBackColor = true;
             NewDocBtn.Click += NewDocBtn_Click;
             // 
+            // AlmacenBtn
+            // 
+            AlmacenBtn.Location = new Point(83, 248);
+            AlmacenBtn.Name = "AlmacenBtn";
+            AlmacenBtn.Size = new Size(75, 23);
+            AlmacenBtn.TabIndex = 2;
+            AlmacenBtn.Text = "Almacen";
+            AlmacenBtn.UseVisualStyleBackColor = true;
+            AlmacenBtn.Click += AlmacenBtn_Click;
+            // 
+            // HorariosBtn
+            // 
+            HorariosBtn.Location = new Point(82, 190);
+            HorariosBtn.Name = "HorariosBtn";
+            HorariosBtn.Size = new Size(97, 23);
+            HorariosBtn.TabIndex = 3;
+            HorariosBtn.Text = "Edittar Horarios";
+            HorariosBtn.UseVisualStyleBackColor = true;
+            HorariosBtn.Click += HorariosBtn_Click;
+            // 
             // FormAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(337, 450);
+            Controls.Add(HorariosBtn);
+            Controls.Add(AlmacenBtn);
             Controls.Add(NewDocBtn);
             Controls.Add(UsernameLabel);
             Name = "FormAdmin";
@@ -67,5 +91,7 @@
 
         private Label UsernameLabel;
         private Button NewDocBtn;
+        private Button AlmacenBtn;
+        private Button HorariosBtn;
     }
 }

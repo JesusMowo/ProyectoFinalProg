@@ -1,10 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Forms\Edicion\FormEdicionDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Interfaces\FormAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Interfaces\FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Login\FormLogin.cs">
+    <Compile Update="Forms\Edicion\FormEdicionDeAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Interfaces\FormDoctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Interfaces\FormHistorialAuditoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Interfaces\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Interfaces\FormPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Interfaces\FormVerCitas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Registro\FormRegisterUser.cs">
@@ -13,7 +34,13 @@
     <Compile Update="Forms\Registro\FormPacienteRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Registro\FormRegistroCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Registro\FormRegistroDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Registro\FormRegistroProducto.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

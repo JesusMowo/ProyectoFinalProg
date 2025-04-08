@@ -39,9 +39,20 @@ namespace ProyectoFinal.Forms.Registro
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(HorarioTxt.Text))
+            {
+                MessageBox.Show("El horario es obligatorio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (!EsHorarioValido(HorarioTxt.Text))
             {
                 MessageBox.Show("El horario debe estar en el formato hh:00-hh:00, terminar en 00 y estar entre 00:00 y 23:59.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(TelefonoTxt.Text))
+            {
+                MessageBox.Show("El teléfono es obligatorio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -60,7 +71,7 @@ namespace ProyectoFinal.Forms.Registro
                 IdUsuario = user.Id,
                 nombreCompleto = FullnameDocTxt.Text,
                 especialidad = EspecialidadTxt.Text,
-                horarios = HorarioTxt.Text,
+                horarioSemanal = HorarioTxt.Text,
                 telefono = TelefonoTxt.Text
             };
             CRUD.AgregarRegistro(rutaUser, user);

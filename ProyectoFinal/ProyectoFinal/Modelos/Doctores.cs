@@ -13,7 +13,7 @@ namespace ProyectoFinal.Modelos
         public int IdUsuario { get; set; }
         public string nombreCompleto { get; set; }
         public string especialidad { get; set; }
-        public string horarios { get; set; }
+        public string horarioSemanal { get; set; }
         public string telefono { get; set; }
         public static Doctores ParseFromTxt(string linea)
         {
@@ -24,13 +24,14 @@ namespace ProyectoFinal.Modelos
                 IdUsuario = int.Parse(campos[1]),
                 nombreCompleto = campos[2],
                 especialidad = campos[3],
-                horarios = campos[4]
+                horarioSemanal = campos[4],
+                telefono = campos[5]
             };
         }
 
         public string ToTxt()
         {
-            return $"{Id},{IdUsuario},{nombreCompleto},{especialidad},{horarios}";
+            return $"{Id},{IdUsuario},{nombreCompleto},{especialidad},{horarioSemanal}, {telefono}";
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoFinal.Utils
 {   // Contrato para que una clase pueda ser parseada desde y hacia Txt
+    // Contrato para que una clase pueda ser parseada desde y hacia Txt
     public interface ITxtParsable<T>
     {
         static abstract T ParseFromTxt(string lineaCsv);
@@ -17,10 +18,7 @@ namespace ProyectoFinal.Utils
     {
         public static int ObtenerUltimoId(string ruta)
         {
-            if (!File.Exists(ruta))
-            {
-                return 0;
-            }
+            AsegurarArchivoExiste(ruta);
 
             var lines = File.ReadAllLines(ruta);
             if (lines.Length == 0)
@@ -44,6 +42,8 @@ namespace ProyectoFinal.Utils
         // READ
         public static List<T> LeerTxt<T>(string ruta, Func<string, T> parseador)
         {
+            AsegurarArchivoExiste(ruta);
+
             var lista = new List<T>();
             using (var sr = new StreamReader(ruta))
             {
@@ -59,6 +59,8 @@ namespace ProyectoFinal.Utils
         // CREATE (append)
         public static void AgregarRegistro<T>(string ruta, T elemento) where T : ITxtParsable<T>
         {
+            AsegurarArchivoExiste(ruta);
+
             try
             {
                 using (var sw = new StreamWriter(ruta, true))
@@ -76,12 +78,22 @@ namespace ProyectoFinal.Utils
         // UPDATE o DELETE (reescribe todo el archivo)
         public static void EscribirCsv<T>(string ruta, List<T> elementos) where T : ITxtParsable<T>
         {
+            AsegurarArchivoExiste(ruta);
+
             using (var sw = new StreamWriter(ruta))
             {
                 foreach (var item in elementos)
                 {
                     sw.WriteLine(item.ToTxt());
                 }
+            }
+        }
+
+        private static void AsegurarArchivoExiste(string ruta)
+        {
+            if (!File.Exists(ruta))
+            {
+                File.Create(ruta).Close();
             }
         }
     }

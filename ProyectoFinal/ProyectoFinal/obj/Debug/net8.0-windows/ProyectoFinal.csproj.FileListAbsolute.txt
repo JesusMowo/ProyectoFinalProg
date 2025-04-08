@@ -1,4 +1,13 @@
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Interfaces.FormAuditoria.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Edicion.FormEdicionDoctor.resources
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.FormAdmin.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Interfaces.FormAlmacen.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.FormLogin.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Interfaces.FormPaciente.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Registro.FormPacienteRegistro.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.FormRegisterUser.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Registro.FormRegistroDoc.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Registro.FormRegistroProducto.resources
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.csproj.GenerateResource.cache
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.AssemblyInfoInputs.cache
@@ -15,7 +24,7 @@ C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.pdb
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.genruntimeconfig.cache
 C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ref\ProyectoFinal.dll
-C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.FormLogin.resources
-C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Registro.FormPacienteRegistro.resources
-C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.FormRegisterUser.resources
-C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Registro.FormRegistroDoc.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Interfaces.FormHistorialAuditoria.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Interfaces.FormDoctores.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Registro.FormRegistroCita.resources
+C:\Users\aleja\Desktop\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\net8.0-windows\ProyectoFinal.Forms.Interfaces.FormVerCitas.resources
