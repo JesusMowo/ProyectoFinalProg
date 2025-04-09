@@ -41,6 +41,7 @@
             label4 = new Label();
             label5 = new Label();
             RegistrarHistorialBtn = new Button();
+            ProductosListBox = new ListBox();
             ((System.ComponentModel.ISupportInitialize)ProductosDgv).BeginInit();
             SuspendLayout();
             // 
@@ -155,11 +156,21 @@
             RegistrarHistorialBtn.UseVisualStyleBackColor = true;
             RegistrarHistorialBtn.Click += RegistrarHistorialBtn_Click;
             // 
+            // ProductosListBox
+            // 
+            ProductosListBox.FormattingEnabled = true;
+            ProductosListBox.ItemHeight = 15;
+            ProductosListBox.Location = new Point(290, 142);
+            ProductosListBox.Name = "ProductosListBox";
+            ProductosListBox.Size = new Size(120, 94);
+            ProductosListBox.TabIndex = 13;
+            // 
             // FormRegistroPacienteAtendido
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(ProductosListBox);
             Controls.Add(RegistrarHistorialBtn);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -195,5 +206,6 @@
         private Label label4;
         private Label label5;
         private Button RegistrarHistorialBtn;
+        private ListBox ProductosListBox;
     }
 }

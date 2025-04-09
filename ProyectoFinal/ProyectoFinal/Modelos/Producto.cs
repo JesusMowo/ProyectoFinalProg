@@ -26,7 +26,7 @@ namespace ProyectoFinal.Modelos
 
         public string ToTxt()
         {
-            return $"{Id}|{nombre}|{cantidad}";
+            return $"{Id},{nombre},{cantidad}";
         }
 
         public static List<Producto> ParseListFromTxt(string txt)
@@ -37,7 +37,7 @@ namespace ProyectoFinal.Modelos
             var items = txt.Split(';');
             foreach (var item in items)
             {
-                var campos = item.Split('|');
+                var campos = item.Split(',');
                 if (campos.Length < 3) continue; // Validar formato básico
                 productos.Add(new Producto
                 {

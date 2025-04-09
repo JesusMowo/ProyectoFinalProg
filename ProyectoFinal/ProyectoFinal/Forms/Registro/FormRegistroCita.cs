@@ -123,10 +123,48 @@ namespace ProyectoFinal.Forms.Registro
                 return;
             }
 
-            // Validar el formato del horario (hh:00)
+            // Validar el formato del horario (hh:mm)
             if (!ValidarHorario(HorarioTxt.Text))
             {
                 MessageBox.Show("El horario no tiene el formato correcto. Use hh:mm.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Obtener el doctor seleccionado
+            string rutaDoctores = Rutas.ObtenerRutaDoctores();
+            var doctores = CRUD.LeerTxt(rutaDoctores, Doctores.ParseFromTxt);
+            var doctor = doctores.FirstOrDefault(d => d.Id == doctorSeleccionadoId);
+
+            if (doctor == null)
+            {
+                MessageBox.Show("No se encontró el doctor seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validar si el horario está dentro del rango del doctor
+            var horas = doctor.horarioSemanal.Split('-');
+            var horaInicio = TimeSpan.Parse(horas[0]);
+            var horaFin = TimeSpan.Parse(horas[1]);
+            var horaSeleccionada = TimeSpan.Parse(HorarioTxt.Text);
+
+            if (horaSeleccionada < horaInicio || horaSeleccionada > horaFin)
+            {
+                MessageBox.Show("El horario seleccionado está fuera del rango de atención del doctor.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validar si ya existe una cita en ese horario
+            string rutaCitas = Rutas.ObtenerRutaCitas();
+            var citas = CRUD.LeerTxt(rutaCitas, Citas.ParseFromTxt);
+            var diaSeleccionado = dateTimePicker1.Value.Date;
+
+            bool existeCita = citas.Any(c => c.IdDoctor == doctorSeleccionadoId &&
+                                             c.Dias.Date == diaSeleccionado &&
+                                             c.horario == HorarioTxt.Text);
+
+            if (existeCita)
+            {
+                MessageBox.Show("Ya existe una cita programada para este horario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -143,24 +181,6 @@ namespace ProyectoFinal.Forms.Registro
 
             int idPaciente = paciente.Id;
 
-            string rutaCitas = Rutas.ObtenerRutaCitas();
-
-            var doctores = CRUD.LeerTxt(Rutas.ObtenerRutaDoctores(), Doctores.ParseFromTxt);
-            var doctor = doctores.FirstOrDefault(d => d.Id == doctorSeleccionadoId);
-
-            if (doctor == null)
-            {
-                MessageBox.Show("No se encontró el doctor seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            // Validar si se puede agendar la cita
-            if (!GestorDeCitas.PuedeAgendarCita(doctor, rutaCitas, HorarioTxt.Text))
-            {
-                MessageBox.Show("No se puede agendar la cita. Verifique el horario o conflictos con otras citas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
             // Guardar la cita
             var nuevaCita = new Citas
             {
@@ -171,13 +191,11 @@ namespace ProyectoFinal.Forms.Registro
                 Dias = dateTimePicker1.Value
             };
 
-            var citas = CRUD.LeerTxt(rutaCitas, Citas.ParseFromTxt);
             citas.Add(nuevaCita);
             CRUD.EscribirTxt(rutaCitas, citas);
 
             MessageBox.Show("Cita guardada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
-
         }
 
         private bool ValidarHorario(string horario)

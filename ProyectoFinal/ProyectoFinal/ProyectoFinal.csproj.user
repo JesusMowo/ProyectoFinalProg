@@ -10,7 +10,7 @@
     <Compile Update="Forms\Interfaces\FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Edicion\FormEdicionDeAlmacen.cs">
+    <Compile Update="Forms\Interfaces\FormEdicionAlmacen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Interfaces\FormDoctores.cs">

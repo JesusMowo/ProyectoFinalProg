@@ -24,6 +24,16 @@ namespace ProyectoFinal.Forms.Registro
             IdCita = idCita;
             CargarProductos();
         }
+        private void ActualizarListBox()
+        {
+            ProductosListBox.Items.Clear();
+
+            foreach (var producto in productosSeleccionados)
+            {
+                ProductosListBox.Items.Add($"{producto.nombre} - Cantidad: {producto.cantidad}");
+            }
+        }
+
         private void CargarProductos()
         {
             string rutaProductos = Rutas.ObtenerRutaProductos();
@@ -56,9 +66,16 @@ namespace ProyectoFinal.Forms.Registro
             string nombreProducto = selectedRow.Cells["Nombre"].Value.ToString();
             int cantidadDisponible = Convert.ToInt32(selectedRow.Cells["CantidadDisponible"].Value);
 
-            if (cantidadAUsar > cantidadDisponible)
+            // Validar que la cantidad total no exceda el máximo disponible
+            var existente = productosSeleccionados.FirstOrDefault(p => p.Id == idProducto);
+            int cantidadTotal = (existente?.cantidad ?? 0) + cantidadAUsar;
+
+            if (cantidadTotal > cantidadDisponible)
             {
-                MessageBox.Show($"No hay suficiente stock para el producto {nombreProducto}.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"La cantidad total para el producto '{nombreProducto}' no puede exceder el stock disponible ({cantidadDisponible}).",
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
                 return;
             }
 
@@ -77,7 +94,6 @@ namespace ProyectoFinal.Forms.Registro
             }
 
             // Añadir a la lista global de productos seleccionados
-            var existente = productosSeleccionados.FirstOrDefault(p => p.Id == productoSeleccionado.Id);
             if (existente != null)
             {
                 existente.cantidad += productoSeleccionado.cantidad; // Sumar cantidades si ya existe
@@ -88,6 +104,9 @@ namespace ProyectoFinal.Forms.Registro
             }
 
             MessageBox.Show("Producto utilizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // Actualizar el ListBox
+            ActualizarListBox();
 
             // Recargar el DGV para reflejar los cambios
             CargarProductos();
@@ -166,6 +185,8 @@ namespace ProyectoFinal.Forms.Registro
             // Marcar la cita como atendida
             MarcarCitaComoAtendida(IdCita);
 
+            ActualizarAlmacen(productosSeleccionados);
+            RegistrarAuditoria(productosSeleccionados, UserId);
             // Limpiar la lista de productos seleccionados después de registrar el historial
             productosSeleccionados.Clear();
 

@@ -1,6 +1,7 @@
 ﻿using ProyectoFinal.Forms.Registro;
 using ProyectoFinal.Modelos;
 using ProyectoFinal.Utils;
+using ProyectoFinal.Forms.Edicion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,7 +60,7 @@ namespace ProyectoFinal.Forms.Interfaces
 
         private void EditarAlmacenBtn_Click(object sender, EventArgs e)
         {
-            var formEdicionDeAlmacen = new FormAlmacen(UserId);
+            var formEdicionDeAlmacen = new FormAuditoria(UserId);
             formEdicionDeAlmacen.FormClosed += (s, args) =>
             {
                 this.Show();
